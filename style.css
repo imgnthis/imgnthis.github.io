@@ -1,0 +1,336 @@
+/* ============================================================
+   Colors and sizes used across the site.
+   Change a value here and it updates everywhere.
+   ============================================================ */
+:root {
+  --navy: #14284b;        /* main color: header, hero, headings */
+  --navy-light: #1f3a68;
+  --orange: #f28c28;      /* accent: buttons, lines, highlights */
+  --orange-dark: #b45309; /* darker orange for links on white (easier to read) */
+  --text: #1f2937;        /* main body text */
+  --muted: #5b6474;       /* softer text: dates, organizations */
+  --bg: #ffffff;
+  --bg-alt: #f4f6fa;      /* light gray-blue for every other section */
+  --border: #dde3ec;
+  --max-width: 900px;
+}
+
+/* ============================================================
+   Basics
+   ============================================================ */
+* {
+  box-sizing: border-box; /* padding is counted inside a box's width */
+}
+
+html {
+  scroll-behavior: smooth; /* nav links glide to sections */
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--orange-dark);
+}
+
+a:hover {
+  color: var(--navy);
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* ============================================================
+   Header and navigation
+   ============================================================ */
+.site-header {
+  background: var(--navy);
+  position: sticky; /* stays at the top while scrolling */
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 8px;  /* smaller, because the menu links now have their own padding */
+  padding-bottom: 8px;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: var(--orange);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px; /* 8px between rows when the menu wraps, 18px between links */
+}
+
+.nav-links a {
+  display: inline-block; /* lets the padding below make the link bigger */
+  padding: 6px 0;        /* taller tap area for fingers */
+  color: #dbe4f3;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+section {
+  padding: 64px 0;
+  scroll-margin-top: 60px; /* keeps headings from hiding under the sticky header */
+}
+
+section.alt {
+  background: var(--bg-alt);
+}
+
+h2 {
+  color: var(--navy);
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--orange);
+  display: inline-block;
+}
+
+/* About me (the big navy area at the top) */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #ffffff;
+  padding: 88px 0;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+}
+
+.headline {
+  color: var(--orange);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 6px 0 20px;
+}
+
+.intro {
+  max-width: 640px;
+  color: #e5ebf5;
+  margin: 0 0 28px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #ffffff;
+  color: var(--navy);
+}
+
+/* ============================================================
+   Education and Experience entries
+   ============================================================ */
+.entry {
+  border-left: 3px solid var(--orange);
+  padding-left: 18px;
+  margin-bottom: 30px;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.entry h3 {
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.org {
+  color: var(--muted);
+  margin: 2px 0 0;
+}
+
+.entry ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+/* ============================================================
+   Skills (shown as rounded tags)
+   ============================================================ */
+.skill-level {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags:last-child {
+  margin-bottom: 0; /* no extra space under the last list; the section padding handles it */
+}
+
+.tags li {
+  background: var(--navy);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.tags-learning li {
+  background: #ffffff;
+  color: var(--navy);
+  border: 2px solid var(--orange);
+}
+
+/* ============================================================
+   Projects (cards in a grid)
+   ============================================================ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* as many columns as fit */
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--orange);
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.card h3 {
+  color: var(--navy);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0 0 10px; /* room for a link below the text */
+}
+
+.card p:last-child {
+  margin-bottom: 0; /* cards with no link don't need that extra room */
+}
+
+/* ============================================================
+   Contact
+   ============================================================ */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.label {
+  display: inline-block;
+  min-width: 80px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+  background: var(--navy);
+  color: #c7d2e5;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ============================================================
+   Small screens (phones)
+   ============================================================ */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .site-header {
+    position: static; /* on phones the wrapped menu is taller, so let it scroll away */
+  }
+}

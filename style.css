@@ -275,6 +275,22 @@ h2 {
   margin-bottom: 0; /* cards with no link don't need that extra room */
 }
 
+/* A preview picture at the top of a card */
+.card-image {
+  display: block;
+  width: 100%;          /* fill the card's width, never wider */
+  height: auto;         /* keep the picture's shape */
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+/* The normal button turns white on hover, which would vanish on a white card.
+   Inside a card, it turns navy instead. */
+.card .button:hover {
+  background: var(--navy);
+  color: #ffffff;
+}
+
 /* ============================================================
    Contact
    ============================================================ */

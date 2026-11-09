@@ -21,6 +21,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,10 +36,9 @@
         <h1>Adam Garner</h1>
         <p class="headline">Aspiring Cloud Engineer</p>
         <p class="intro">
-          I am a Cloud Technologies student at Ivy Tech Community College, working toward
-          an Associate of Science degree, expected May 2028. Before school I spent eight years
-          in freight operations, and I am working toward a seated technology role in support,
-          operations, or entry-level IT.
+          Cloud Technologies student at Ivy Tech, changing careers into IT after eight years in freight
+          operations. I'm looking for help desk and IT support roles around Portage and Valparaiso, and I
+          build websites for small businesses on the side as Dunes Digital.
         </p>
         <a class="button" href="#contact">Get in touch</a>
       </div>
@@ -106,7 +106,7 @@
 
         <article class="entry">
           <div class="entry-top">
-            <h3>Technical Media</h3>
+            <h3>Technical Media (Volunteer)</h3>
             <span class="date">10 years</span>
           </div>
           <p class="org">Calvary Church &middot; Valparaiso, IN</p>
@@ -117,7 +117,17 @@
 
         <article class="entry">
           <div class="entry-top">
-            <h3>Technical Media and Musician</h3>
+            <h3>Volunteer Driver</h3>
+          </div>
+          <p class="org">Calvary Church &middot; Valparaiso, IN</p>
+          <ul>
+            <li>Drive mission teams to and from the airport.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Technical Media and Musician (Volunteer)</h3>
             <span class="date">10 years</span>
           </div>
           <p class="org">Grace Baptist &middot; Portage, IN</p>
@@ -137,6 +147,7 @@
         <ul class="tags">
           <li>Windows</li>
           <li>Microsoft Office</li>
+          <li>Microsoft 365</li>
           <li>Google Docs</li>
           <li>Zoom</li>
           <li>ProPresenter</li>
@@ -153,6 +164,7 @@
         <ul class="tags tags-learning">
           <li>Cloud technologies</li>
           <li>Google AI Essentials</li>
+          <li>Python (beginner)</li>
         </ul>
       </div>
     </section>
@@ -162,6 +174,62 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="cards">
+
+          <!-- Case study: the "case-study" class makes this card stretch the full width of the grid. -->
+          <article class="card case-study" id="chip-digger">
+            <h3>Case study: Chip Digger Property Management</h3>
+
+            <a href="https://chipdigger.netlify.app" target="_blank" rel="noopener">
+              <!-- alt text describes the picture for screen readers, or if it fails to load. -->
+              <img class="card-image" src="images/chip-digger-preview.jpg" alt="Preview of the Chip Digger Property Management website" loading="lazy">
+            </a>
+
+            <h4>The client</h4>
+            <p>
+              A lawn, landscaping, fencing, painting and snow removal company in Glocester and
+              North Scituate, Rhode Island. I built it fully remote, by phone and text.
+            </p>
+
+            <!-- Fill in once your buddy answers, then delete the comment markers around it.
+            <h4>The problem</h4>
+            <p>WHAT CHIP DIGGER HAD BEFORE, IN ONE OR TWO SENTENCES.</p>
+            -->
+
+            <h4>What I built</h4>
+            <ul>
+              <li>Eight service cards in a year round layout, so snow removal doesn't vanish in July</li>
+              <li>Drag to compare before and after sliders, plus a project gallery</li>
+              <li>A sticky call bar on phones with tap to call or text</li>
+              <li>An estimate request form</li>
+              <li>Hand written HTML and CSS, hosted on Netlify</li>
+            </ul>
+
+            <!-- Fill in once your buddy answers, then delete the comment markers around it.
+            <h4>The result</h4>
+            <p>NEW CALLS OR ESTIMATE REQUESTS SINCE LAUNCH, IN YOUR BUDDY'S WORDS.</p>
+            -->
+
+            <!-- Fill in once your buddy answers, then delete the comment markers around it.
+            <blockquote>
+              <p>"YOUR BUDDY'S TWO SENTENCE QUOTE."</p>
+              <cite>NAME, Chip Digger Property Management</cite>
+            </blockquote>
+            -->
+
+            <h4>What I'd do differently</h4>
+            <p>
+              The estimate form opens the visitor's email app instead of sending right from the page.
+              Next time I'd use a form that submits on the site, because fewer people bail on phones.
+            </p>
+
+            <a class="button" href="https://chipdigger.netlify.app" target="_blank" rel="noopener">Visit the live site</a>
+          </article>
+
+          <article class="card">
+            <img class="card-image" src="images/speed_chart.png" alt="Line chart of hourly internet speed tests: about 200 Mbps before the fix, then over 2,000 Mbps after the new network card and the switch to Ookla's CLI">
+            <h3>Home Internet Speed Monitor</h3>
+            <p>A Python script tests my internet every hour using Windows Task Scheduler, logs the results, and turns them into this chart. The first night showed only about 200 Mbps on a 2 Gbps plan. I traced it to an outdated network card and a test library that under-reports fast connections, so I installed a new card and switched to Ookla's official CLI. Speeds jumped to over 2,000 Mbps, confirmed by pinning every test to one server.</p>
+          </article>
 
           <article class="card">
             <h3>SousVault</h3>
@@ -190,34 +258,41 @@
             <p>Built by hand with plain HTML and CSS, no frameworks.</p>
           </article>
 
-          <article class="card">
-            <!-- alt text describes the picture for screen readers, or if it fails to load. -->
-            <img class="card-image" src="images/chip-digger-preview.jpg" alt="Preview of the Chip Digger Property Management website">
-            <h3>Chip Digger Property Management Website</h3>
-            <p>A full business website I designed and launched for a local property management company in Glocester, RI, built from their Facebook page and job photos. It features before and after photo sliders, a year round services layout, a mobile call button, and a free estimate form, hosted on Netlify.</p>
-            <a class="button" href="https://chipdigger.netlify.app" target="_blank" rel="noopener">View Live Site</a>
-          </article>
-
-          <article class="card">
-            <img class="card-image" src="images/speed_chart.png" alt="Line chart of hourly internet speed tests: about 200 Mbps before the fix, then over 2,000 Mbps after the new network card and the switch to Ookla's CLI">
-            <h3>Home Internet Speed Monitor</h3>
-            <p>A Python script tests my internet every hour using Windows Task Scheduler, logs the results, and turns them into this chart. The first night showed only about 200 Mbps on a 2 Gbps plan. I traced it to an outdated network card and a test library that under-reports fast connections, so I installed a new card and switched to Ookla's official CLI. Speeds jumped to over 2,000 Mbps, confirmed by pinning every test to one server.</p>
-          </article>
-
         </div>
       </div>
     </section>
 
+    <!-- SERVICES (Dunes Digital) -->
+    <!-- Add a "See Dunes Digital" button here once that site is live. Prices match the Launch Plan doc. -->
+    <section id="services">
+      <div class="container">
+        <h2>Websites for small businesses</h2>
+        <p>
+          I build simple, fast websites for local businesses that would rather be working than
+          coding, plus everyday IT help for small offices. It runs under the name Dunes Digital.
+        </p>
+        <ul class="services-list">
+          <li><strong>Starter Page:</strong> one scrolling page with services, photos, tap to call and an estimate form. From $400.</li>
+          <li><strong>Small Business Site:</strong> up to five pages with basic Google setup. From $950.</li>
+          <li><strong>Care Plan:</strong> monthly updates and upkeep so you never touch the site again. $35 a month.</li>
+          <li><strong>IT Help:</strong> Wi-Fi, slow PCs, printers and Microsoft 365 email setup. $50 an hour, Windows only.</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="alt">
       <div class="container">
         <h2>Contact</h2>
-        <p>The best way to reach me is by email.</p>
+        <p><strong>Hiring for help desk or IT support?</strong> Email is the best way to reach me.</p>
+        <!-- Link "Dunes Digital" to its site here once it's live. -->
+        <p><strong>Need a website or IT help for your business?</strong> Email me for packages and a free quote.</p>
         <ul class="contact-list">
           <!-- "mailto:" opens the visitor's email app with your address filled in. -->
           <li><span class="label">Email</span> <a href="mailto:adam.garner.cloud@gmail.com">adam.garner.cloud@gmail.com</a></li>
           <!-- target="_blank" opens LinkedIn in a new tab, so your site stays open. -->
           <li><span class="label">LinkedIn</span> <a href="https://www.linkedin.com/in/adam-garner-01041b442/" target="_blank" rel="noopener">LinkedIn profile</a></li>
+          <li><span class="label">GitHub</span> <a href="https://github.com/IMGNTHIS" target="_blank" rel="noopener">GitHub profile</a></li>
         </ul>
       </div>
     </section>

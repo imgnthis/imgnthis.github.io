@@ -327,6 +327,62 @@ h2 {
 }
 
 /* ============================================================
+   Case study (a wide project card) and Services
+   ============================================================ */
+.case-study {
+  grid-column: 1 / -1; /* stretch across every column of the project grid */
+}
+
+.case-study h3 {
+  font-size: 1.3rem;
+}
+
+.case-study .card-image {
+  max-width: 640px;  /* keeps the preview from getting huge on wide screens */
+  margin: 14px 0 20px;
+  box-shadow: 0 8px 24px rgba(20, 40, 75, 0.15); /* soft navy shadow */
+}
+
+.case-study h4 {
+  color: var(--navy);
+  margin: 20px 0 6px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.case-study ul {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+
+/* Ready for your buddy's quote once it's filled in */
+.case-study blockquote {
+  margin: 20px 0;
+  padding: 12px 20px;
+  border-left: 4px solid var(--orange);
+  background: var(--bg-alt);
+  font-style: italic;
+}
+
+.case-study cite {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.services-list {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.services-list li {
+  margin-bottom: 8px;
+}
+
+/* ============================================================
    Small screens (phones)
    ============================================================ */
 @media (max-width: 600px) {

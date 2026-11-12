@@ -275,6 +275,12 @@ h2 {
   margin-bottom: 0; /* cards with no link don't need that extra room */
 }
 
+/* Bullet lists inside cards: same indent as the case study */
+.card ul {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+
 /* A preview picture at the top of a card */
 .card-image {
   display: block;

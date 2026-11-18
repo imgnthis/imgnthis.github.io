@@ -281,6 +281,12 @@ h2 {
   padding-left: 20px;
 }
 
+/* Tag pills inside a card: no bullet indent, a little space before the button */
+.card .tags {
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
 /* A preview picture at the top of a card */
 .card-image {
   display: block;
